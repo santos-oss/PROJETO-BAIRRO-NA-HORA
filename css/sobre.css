@@ -1,0 +1,442 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(rgba(255, 255, 250, 0.7), rgba(135, 205, 250));
+
+}
+
+span {
+    color: #82c2fa;
+}
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .header .menu ul li {
+        margin: 5px 0;
+    }
+
+    /* Banner */
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    /* Missão e valores */
+    .mission h2 {
+        font-size: 2rem;
+    }
+
+    .mission p {
+        font-size: 1rem;
+    }
+
+    .header-botton-side {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-botton-side-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header-botton-side-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .header-botton-side-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .values .value-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .values .value-item {
+        width: 100%;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    /* Rodapé */
+    .footer .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #002f6c;
+    color: white;
+    padding: 20px 0;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .menu ul li {
+    display: inline;
+}
+
+.header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.header .menu ul li a:hover,
+.header .menu ul li a.active {
+    background-color: #004b8d;
+    border-radius: 5px;
+}
+
+
+
+/* Banner */
+.banner {
+    text-align: center;
+    background: linear-gradient(135deg, #004b8d, #002f6c);
+    color: white;
+    padding: 60px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+/* Missão e valores */
+
+.values {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.values .value-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mission h2 {
+    font-size: 3rem;
+}
+
+.mission p {
+    font-size: 25px;
+}
+
+
+
+.mission {
+    background: linear-gradient(rgba(255, 255, 250, 0.7), rgba(135, 205, 250)), url("../imgs/v915-techi-001-a.jpg");
+
+}
+
+
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-90%);
+    transition: all 2s;
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+
+.header-botton-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.header-botton-side-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-botton-side-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.header-botton-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-botton-side-right img {
+    width: 115%;
+    box-shadow: 5px;
+}
+
+
+
+
+
+
+
+
+
+.values .value-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.values .value-item h3 {
+    color: #002f6c;
+    margin-bottom: 10px;
+}
+
+.values .value-item p {
+    font-size: 1rem;
+}
+
+.values h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #003366;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.values .value-item::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #003366, #66ccff);
+    margin: 0.5rem auto 0;
+    border-radius: 3px;
+}
+
+
+.value-item:hover {
+    transform: translateY(-10px);
+}
+
+.imagens-valores img {
+
+    border-radius: 30%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+
+}
+
+.linha-box {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 333px;
+    background: linear-gradient(90deg, #003366, #66ccff);
+    margin: 0.5rem auto 0;
+    border-radius: 3px;
+}
+
+.linha-box2 {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 15rem;
+    background: linear-gradient(90deg, #003366, #66ccff);
+    margin: 0.5rem auto 0;
+    border-radius: 3px;
+}
+
+/* Time */
+.team {
+    background: rgba(255, 255, 250, 0.7);
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+/* Rodapé */
+.footer-titulo {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #82c2fa;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #2f5c85;
+}
+
+footer .semnome {
+    color: white;
+    text-decoration: none;
+}
+
+footer .semnome:hover {
+    color: #82c2fa;
+}
