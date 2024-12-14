@@ -5,6 +5,12 @@
     margin-top: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .orientacao {
     margin-left: 20%;
     margin-right: 20%;
@@ -120,138 +126,6 @@ body a {
     text-align: left;
 }
 
-.header {
-    background-color: #002f6c;
-    color: white;
-    padding: 20px 0;
-}
-
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.header .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    z-index: 10;
-}
-
-.header .menu ul li {
-    display: inline;
-    z-index: 10;
-}
-
-.header .menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 20px 25px;
-    transition: background-color 0.3s;
-    z-index: 10;
-}
-
-.header .menu ul li a:hover,
-.header .menu ul li a.active {
-    background-color: #004b8d;
-    border-radius: 5px;
-}
-
-
-
-.header-s {
-    margin-left: 6%;
-    background-color: #002f6c;
-    color: white;
-    padding: 20px 0;
-}
-
-.header-s .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-s .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.header-s .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    z-index: 10;
-}
-
-.header-s .menu ul li {
-    display: inline;
-    z-index: 10;
-}
-
-.header-s .menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 20px 25px;
-    transition: background-color 0.3s;
-    z-index: 10;
-}
-
-.header-s .menu ul li a:hover,
-.header-s .menu ul li a.active {
-    background-color: #004b8d;
-    border-radius: 5px;
-}
-
-.carousel {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    max-height: 200px;
-    align-items: center;
-    border-radius: 0;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.fundocarousel {
-    background-color: #2f5c85;
-    padding: 30px;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-
-.carousel-images img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-.carousel-images img:hover {
-    cursor: pointer;
-}
-
-.carousel-images a {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 0;
-}
 
 button {
     position: absolute;
@@ -287,6 +161,14 @@ button:hover {
     .carousel {
         width: 90%;
     }
+}
+
+#botao-exp {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-content: center;
+    font-size: 24px;
 }
 
 .textos {
@@ -593,9 +475,7 @@ footer .semnome:hover {
 nav.menu-lateral {
     width: 75px;
     height: 100%;
-
     padding: 40px 0 1%;
-    box-shadow: 3px 0 0 #1B4BF7;
     position: fixed;
     top: 0;
     left: 0;
@@ -611,21 +491,36 @@ nav.menu-lateral.expandir {
 
 .btn-expandir {
     width: 100%;
+    height: max-content;
+    min-width: none;
     padding-left: 7px;
-    z-index: 10;
     margin-left: 15px;
-    margin-top: 0;
-    line-height: 0.5;
-}
-
-.btn-expandir i {
     color: white;
-    font-size: 30px;
+
     cursor: pointer;
-    z-index: 10;
+
 }
 
 
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #5e7d9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #003366;
+}
 
 
 
@@ -657,6 +552,50 @@ ul li:hover ul.dropdown {
     transform: translateX(0);
     z-index: 10;
 }
+
+/* Cabeçalho */
+.header {
+    background-color: #002f6c;
+    color: white;
+    padding: 20px 0;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .menu ul li {
+    display: inline;
+}
+
+.header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.header .menu ul li a:hover,
+.header .menu ul li a.active {
+    background-color: #004b8d;
+    border-radius: 5px;
+}
+
 
 ul li ul.dropdown li {
     padding: 15px;
@@ -772,7 +711,6 @@ nav.menu-lateral {
     height: 100%;
     background-color: #0f3759;
     padding: 40px 0 1%;
-    box-shadow: 3px 0 0 #1B4BF7;
     position: fixed;
     top: 0;
     left: 0;
@@ -784,18 +722,8 @@ nav.menu-lateral.expandir {
 
 }
 
-.btn-expandir {
-    width: 100%;
-    padding-left: 7px;
 
-}
 
-.btn-expandir i {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-
-}
 
 
 
@@ -857,6 +785,57 @@ ul li.item-menu>a::after {
 
 ul li:hover>a::after {
     transform: rotate(90deg);
+}
+
+
+.menu {
+    background-color: #003366;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #00509E;
+}
+
+/* Estilo do dropdown */
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+
+    position: absolute;
+    background-color: #00509E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #003366;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
@@ -936,7 +915,6 @@ nav.menu-lateral {
     height: 100%;
     background-color: #0f3759;
     padding: 40px 0 1%;
-    box-shadow: 3px 0 0 #1B4BF7;
     position: fixed;
     top: 0;
     left: 0;
@@ -948,18 +926,6 @@ nav.menu-lateral.expandir {
 
 }
 
-.btn-expandir {
-    width: 100%;
-    padding-left: 7px;
-
-}
-
-.btn-expandir i {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-
-}
 
 
 

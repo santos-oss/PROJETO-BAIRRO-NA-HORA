@@ -14,7 +14,16 @@
             <nav class="menu">
                 <ul>
                     <li><a class="active" href="">Início</a></li>
-                    <li><a href="../paginas/sobre.html">Sobre</a></li>
+                    <div class="menu">
+
+                        <div class="dropdown">
+                            <a href="#noticias">Notícias</a>
+                            <div class="dropdown-content">
+                                <li><a href="jf-CN.html">Ceilândia Norte</a></li>
+                                <a href="/regioes/jf-SN.html">Sol Nascente</a>
+                            </div>
+                        </div>
+                        <li><a href="../paginas/sobre.html">Sobre</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,28 +44,35 @@
     <h3 class="tematicas">Bairros</h3>
     <div class="noticias">
         <div class="container-text2">
-            <a href="../regioes/jf-CN.html">
-                <img src="https://via.placeholder.com/300" alt="Notícia 1">
-                <div class="ocult-text">Ceilândia Norte</div>
-            </a>
+            <div class="inage">
+                <a href="jf-CN.html"><img
+                        src="https://static.poder360.com.br/2023/04/Ceilandia-Brasilia-Aniversario-63anos-CaixaDAgua-Personagens-FeiraDaCeilandia-19abr2023-33-1-scaled.jpg"></a>
+            </div>
+            <div class=" text" data-url="">
+                <p>Ceilândia Norte é o centro pulsante da Ceilândia, conhecida pela Feira Central, onde sabores
+                    nordestinos e cultura local se encontram. Vibrante e cheia de vida, é símbolo de tradição e
+                    modernidade no Distrito Federal.
+                    por: https://www.poder360.com.br/brasilia/aos-53-anos-ceilandia-espelha-desigualdades-de-brasilia/
+                </p>
+            </div>
         </div>
+
         <div class="container-text2">
-            <a href="../regioes/jf-CS.html">
-                <img src="https://via.placeholder.com/300" alt="Notícia 2">
-                <div class="ocult-text">Ceilândio Sul</div>
-            </a>
-        </div>
-        <div class="container-text2">
-            <a href="../regioes/jf-SN.html">
-                <img src="https://via.placeholder.com/300" alt="Notícia 3">
-                <div class="ocult-text">Sol Nascente</div>
-            </a>
-        </div>
-        <div class="container-text2">
-            <a href="../regioes/jf-PS.html">
-                <img src="https://via.placeholder.com/300" alt="Notícia 1">
-                <div class="ocult-text">Psul</div>
-            </a>
+            <div class="inage">
+                <a href="jf-SN.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Sol_Nascente_Trecho_02.jpg/520px-Sol_Nascente_Trecho_02.jpg"
+                        alt="Notícia 1"></a>
+            </div>
+            <div class=" text" data-url="">
+                <p>
+                    Sol Nascente, localizado em Ceilândia, é um dos maiores bairros populares do Brasil. Conhecido por
+                    sua comunidade acolhedora e batalhadora, destaca-se pela rica cultura local e pelo espírito de união
+                    de seus moradores.
+                    imagem por: https://pt.wikipedia.org/wiki/Sol_Nascente/Pôr_do_Sol
+                </p>
+
+            </div>
+
         </div>
 
     </div>
@@ -76,7 +92,9 @@
             </div>
             <div class="footer-section">
                 <ul>
-                    <li><a href="../regioes/sugerirbairro.html">Deseja sugerir seu bairro para nosso projeto?</a></li>
+                    <li><a href="../regioes/sugerirbairro.html">Deseja sugerir sua noticia para nosso projeto?</a></li>
+                    <a href="../regioes/php/RegistrarNoticia.php" class="botao">Clique Aqui</a>
+
 
                 </ul>
             </div>
@@ -90,6 +108,7 @@
         <hr class="linha-final">
         <div class="linha">
             <p>&copy;Bairro NaHora 2024 - Sempre com você </p>
+
         </div>
     </footer>
 
