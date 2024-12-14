@@ -1,0 +1,155 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header2 {
+    background: #1e90ff;
+    padding: 15px 0;
+    text-align: center; /* Added for centering */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Added for centering */
+    justify-content: center; /* Added for centering */
+    align-items: center; /* Added for centering */
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 1.8em;
+    padding-right: 20px; /* Added spacing */
+}
+
+.menu {
+    display: inline-block; /* Changed from float */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Added for centering */
+}
+
+.menu li {
+    margin: 0 10px; /* Adjusted margins */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu a:hover, .menu .active {
+    background: #4169e1;
+    border-radius: 3px;
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.article-meta {
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.footer {
+    background: #1e90ff;
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center; /* Added for centering */
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; /* Changed to center */
+    align-items: center; /* Added for centering */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center; /* Added for centering */
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Added for centering */
+}
+
+.footer-section button {
+    background: #4169e1;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.footer-section button:hover {
+    background: #1e90ff;
+}
+
+.linha-final {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 20px auto; /* Changed for centering */
+    width: 90%; /* Added for better appearance */
+}
+
+.linha {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
